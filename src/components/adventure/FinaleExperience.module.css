@@ -1,0 +1,269 @@
+.experience {
+  position: relative;
+  z-index: 4;
+  color: #fff8fc;
+  font-family: "Poppins", Arial, sans-serif;
+  isolation: isolate;
+}
+
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: clamp(76px, 11vh, 112px) 22px 58px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.heroCrown { color: #ffe29a; font: 38px/1 Georgia, serif; filter: drop-shadow(0 0 14px #ffd873); }
+.eyebrow { margin: 10px 0 4px; color: #ffe5b3; font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-shadow: 0 2px 9px #211137; }
+.hero h1 { position: relative; margin: 5px 0 12px; color: #fff2d9; font: italic 700 clamp(47px, 7vw, 88px)/.98 "Dancing Script", "Segoe Script", cursive; text-shadow: 0 2px #8d416d, 0 0 19px #ff9dce, 0 0 44px #ffadd177; }
+.hero h1 { text-transform: uppercase; }
+.hero h1 > span { color: #ffb6d7; font-size: 1.08em; text-shadow: 0 2px #73325b, 0 0 15px #ff74b2, 0 0 38px #ffacd9; }
+.titleHeart { width: clamp(21px, 3vw, 34px); color: #ffd87c; filter: drop-shadow(0 0 10px #ff75bc); vertical-align: .1em; }
+.heroPromise { max-width: 710px; margin: 7px auto 6px; color: #fff0de; font: italic 600 clamp(16px, 1.9vw, 23px)/1.38 "Playfair Display", Georgia, serif; text-shadow: 0 2px 10px #29133d; }
+.heroMessage { max-width: 620px; margin: 3px auto 0; color: #fff6f7; font: 500 clamp(11px, 1.2vw, 14px)/1.6 "Poppins", sans-serif; text-shadow: 0 2px 9px #28153f; }
+.beginLink { display: inline-flex; align-items: center; gap: 9px; margin-top: 23px; padding: 11px 20px; border: 1px solid #ffe1b5aa; border-radius: 30px; color: #fff3dc; background: #4c245e9e; box-shadow: 0 4px 20px #1e123e66, inset 0 1px #fff7; font-size: 12px; font-weight: 600; text-decoration: none; backdrop-filter: blur(7px); transition: transform .2s, background .2s; }
+.beginLink:hover { transform: translateY(2px); background: #9d4d8dc9; }
+
+.chapterNav { position: sticky; z-index: 7; top: 10px; display: flex; justify-content: center; gap: 7px; width: fit-content; max-width: calc(100% - 24px); margin: -30px auto 36px; padding: 7px; overflow-x: auto; border: 1px solid #ffe3f263; border-radius: 28px; background: #26143bc9; box-shadow: 0 8px 25px #160d2a66, inset 0 1px #fff4; backdrop-filter: blur(14px); scrollbar-width: none; }
+.chapterNav::-webkit-scrollbar { display: none; }
+.chapterNav a { flex: 0 0 auto; display: flex; align-items: center; gap: 7px; padding: 9px 13px; border-radius: 22px; color: #fff0f8; font-size: 10px; font-weight: 600; text-decoration: none; transition: background .2s, color .2s; }
+.chapterNav a:hover, .chapterNav a:focus-visible { color: #663454; background: linear-gradient(110deg, #ffe7c0, #ffb9d8); outline: none; }
+.chapterNav a > span { color: #ffd988; font-size: 9px; }
+.chapterNav a:hover > span, .chapterNav a:focus-visible > span { color: #975278; }
+
+.chapters { display: grid; gap: clamp(25px, 5vh, 54px); padding: 0 22px 46px; }
+.chapter { position: relative; width: min(1120px, 100%); min-height: min(740px, 88svh); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 25px; margin: 0 auto; padding: clamp(25px, 4vw, 52px); scroll-margin-top: 94px; overflow: hidden; border: 1px solid #ffe0f06b; border-radius: 32px; background: linear-gradient(145deg, #321d50e8, #492557e3 60%, #602c63e0); box-shadow: 0 24px 70px #150c2c70, inset 0 1px #fff5, inset 0 -1px #ffbfd526; backdrop-filter: blur(12px); }
+.chapter::before { position: absolute; inset: 9px; border: 1px solid #ffe3c326; border-radius: 24px; content: ""; pointer-events: none; }
+.chapterHeading { position: relative; z-index: 1; text-align: center; }
+.chapterHeading > span { color: #ffdda2; font-size: 9px; font-weight: 700; letter-spacing: 2px; }
+.chapterHeading h2 { margin: 8px 0 5px; color: #fff0dc; font: italic 600 clamp(28px, 4vw, 48px)/1.12 "Playfair Display", Georgia, serif; text-shadow: 0 2px 12px #ed89c852; text-wrap: balance; }
+.chapterHeading p { margin: 0 auto; color: #f8e8f4; font-size: clamp(11px, 1.2vw, 14px); line-height: 1.55; }
+.primaryButton, .secondaryButton { min-height: 47px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 0 22px; border: 2px solid #ffe19d; border-radius: 28px; color: #fff8fc; background: linear-gradient(105deg, #f886bd, #d84d9d 62%, #9950c9); box-shadow: 0 5px 0 #71376191, 0 9px 23px #160c2e70, inset 0 2px #fff9; cursor: pointer; font: 700 12px "Poppins", sans-serif; text-shadow: 0 1px 4px #71315e; transition: transform .18s ease, filter .18s ease, box-shadow .18s ease; }
+.primaryButton:hover { transform: translateY(-2px); filter: brightness(1.08); box-shadow: 0 7px 0 #71376191, 0 13px 26px #160c2e88, inset 0 2px #fff9; }
+.primaryButton:active { transform: translateY(1px); }
+.primaryButton:focus-visible, .secondaryButton:focus-visible, .textButton:focus-visible, .treasureButton:focus-visible, .wishStars button:focus-visible, .invisibleGift:focus-visible { outline: 3px solid #ffe5a0; outline-offset: 3px; }
+.secondaryButton { border-color: #efc7e7; color: #633957; background: linear-gradient(110deg, #fff2f9, #e9c9f0); text-shadow: none; }
+
+.constellationChapter { background: radial-gradient(ellipse at 50% 45%, #583c86ed, #311e55ee 68%, #241942ed); }
+.skyMap { position: relative; width: min(900px, 100%); aspect-ratio: 2.72 / 1; min-height: 210px; overflow: hidden; border: 1px solid #eacfff45; border-radius: 24px; background: radial-gradient(ellipse at 50% 54%, #533c7d8a, #211c4e 77%); box-shadow: inset 0 0 40px #ce8fff28, 0 12px 35px #170f386e; }
+.nebula { position: absolute; inset: 5% 8%; border-radius: 50%; background: radial-gradient(ellipse, #c970d92b, #c970d900 69%); filter: blur(17px); }
+.skyMap svg { position: relative; width: 100%; height: 100%; overflow: visible; }
+.skyDot { fill: #fff2ca; opacity: .4; animation: star-twinkle 2.7s ease-in-out infinite alternate; }
+.constellationLine { fill: none; stroke: #ffdf9b; stroke-width: 2.5; stroke-dasharray: 1 420; filter: drop-shadow(0 0 5px #ffd875); transition: stroke-dasharray 2s ease; }
+.skyRevealed .constellationLine { stroke-dasharray: 420 0; }
+.nameStar { fill: #fff5c7; opacity: 0; transform: scale(.15); transform-box: fill-box; transform-origin: center; transition: opacity .35s, transform .45s cubic-bezier(.2,.8,.2,1); filter: drop-shadow(0 0 7px #ffcf76); }
+.nameStar path { stroke: #fff4c8; stroke-width: 1.7; }
+.skyRevealed .nameStar { opacity: 1; transform: scale(1); }
+.constellationName { fill: transparent; stroke: #ffe5ac; stroke-width: 1.2; stroke-dasharray: 900; stroke-dashoffset: 900; font: italic 600 78px "Dancing Script", cursive; filter: drop-shadow(0 0 12px #f680c4); transition: stroke-dashoffset 2s ease .45s, fill .7s ease 1.5s; }
+.skyRevealed .constellationName { fill: #ffd8ef; stroke-dashoffset: 0; }
+.skyHeart { fill: #ff9cc9; opacity: 0; transform: scale(.2); transform-origin: 50% 50%; filter: drop-shadow(0 0 10px #ff75c5); transition: opacity .6s 1.5s, transform .6s 1.5s; }
+.skyRevealed .skyHeart { opacity: 1; transform: scale(1); }
+.constellationResult { min-height: 52px; max-width: 780px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center; }
+.constellationResult strong { color: #ffe7ae; font: italic 600 clamp(16px, 2vw, 22px) "Playfair Display", Georgia, serif; text-shadow: 0 0 12px #ff9bc7; }
+.constellationResult p { margin: 0; color: #fff0f7; font-size: 12px; line-height: 1.55; }
+
+.treasureChapter { background: radial-gradient(ellipse at 50% 38%, #714b78ed, #3c2258f2 72%); }
+.treasureLayout { width: min(970px, 100%); display: grid; grid-template-columns: minmax(240px, .82fr) minmax(0, 1.18fr); align-items: center; gap: 28px; }
+.chestScene { position: relative; min-height: 310px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 13px; padding: 12px 8px; perspective: 850px; }
+.chestScene > p { position: relative; z-index: 2; margin: 5px 0; color: #ffe9c4; font: italic 500 14px "Playfair Display", Georgia, serif; text-align: center; }
+.chestAura { position: absolute; right: 0; bottom: 55px; left: 0; height: 220px; border-radius: 50%; background: radial-gradient(ellipse, #ffc76d36, #ffa5d400 70%); filter: blur(12px); transition: opacity .4s; }
+.chestBody { position: relative; z-index: 1; width: min(285px, 90%); height: 142px; display: flex; align-items: center; justify-content: center; border: 6px solid #e5ab51; border-radius: 15px 15px 27px 27px; background: linear-gradient(115deg, #a653a2, #df719e 45%, #9f559c); box-shadow: 0 13px 0 #6d3c69, 0 21px 32px #150c2c8c, inset 0 3px #fff6, inset 0 -13px 20px #52244b65; }
+.chestBand { position: absolute; inset: 0 43%; border-right: 5px solid #ffdf9a; border-left: 5px solid #ffdf9a; background: #eab86532; }
+.chestLock { position: relative; z-index: 3; width: 57px; height: 61px; display: grid; place-items: center; border: 3px solid #fff0bb; border-radius: 15px 15px 21px 21px; color: #fff0ac; background: linear-gradient(140deg, #eea2c3, #a74d89); box-shadow: 0 0 16px #ffe59c, inset 0 2px #fff9; }
+.lockHeart { position: absolute; width: 45px; height: 45px; color: #ffb2d7; filter: drop-shadow(0 0 6px #ff6fb6); }.chestLock > span { position: relative; z-index: 1; display: grid; place-items: center; color: #fff4c8; }
+.gem { position: absolute; top: 14px; right: 16px; color: #ffd978; font-size: 28px; text-shadow: 0 0 12px #ffe47e; }
+.treasureGlow { position: absolute; inset: 30% 14% 10%; border-radius: 50%; background: #fff5b5; opacity: 0; filter: blur(29px); transition: opacity .7s; }
+.glowOn { opacity: .75; }
+.chestLid { position: absolute; z-index: 2; top: 50px; width: min(292px, 94%); height: 90px; display: flex; justify-content: space-evenly; align-items: center; border: 6px solid #f4c263; border-bottom-width: 10px; border-radius: 90px 90px 12px 12px; background: linear-gradient(110deg, #be66ad, #f18bb4 48%, #b25aa4); box-shadow: 0 -6px 0 #fff1, 0 -11px 19px #ffd87946, inset 0 3px #fff7; transform-origin: 50% 100%; transform-style: preserve-3d; transition: transform .85s cubic-bezier(.2,.7,.15,1); }
+.chestLid i { width: 11px; height: 11px; border: 2px solid #fff0ba; border-radius: 50%; background: #f1c56f; box-shadow: 0 0 7px #ffde83; }
+.chestUnlocking .chestLock { color: #fff; box-shadow: 0 0 24px #fff3a4; animation: lock-glow .7s ease-in-out infinite alternate; }
+.chestOpen .chestLid { transform: translateY(-82px) rotateX(48deg); }
+.chestOpen .chestAura { opacity: 1; }
+.treasureShelf { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.treasureButton { position: relative; min-height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; padding: 10px 8px; border: 1px solid #ffe2f184; border-radius: 17px; color: #fff4fc; background: linear-gradient(145deg, #fff1f72b, #edb7e21f); box-shadow: inset 0 1px #fff5, 0 6px 15px #1d103b48; cursor: pointer; text-align: center; animation: treasure-arrive .55s cubic-bezier(.2,.8,.2,1) both; transition: transform .2s, border-color .2s, background .2s; }
+.treasureButton:last-child { grid-column: 1 / -1; }
+.treasureButton:hover, .treasureSelected { transform: translateY(-3px); border-color: #ffe3a0; background: linear-gradient(145deg, #ffdcf43d, #ffbaea35); }
+.treasureIcon { height: 31px; display: grid; place-items: center; color: #ffd884; filter: drop-shadow(0 0 9px #ff83ca); }
+.treasureIcon > svg { width: 25px; height: 25px; }
+.pandaMark { font-size: 23px; }
+.scrollMark { color: #ffe1aa; font-size: 28px; }
+.treasureButton b { max-width: 100%; font: 600 10px/1.25 "Playfair Display", Georgia, serif; }
+.treasureButton small { color: #f4dced; font-size: 8px; }
+.treasureFound { border-color: #ffdd99a1; }
+.foundCheck { position: absolute; top: 7px; right: 7px; color: #b3f0c9; }
+.treasureReveal { width: min(850px, 100%); min-height: 118px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; padding: 18px 21px; border: 1px solid #ffe1b77a; border-radius: 22px; color: #fff5f9; background: linear-gradient(130deg, #fff1f71c, #ffcfeb20); text-align: center; animation: reveal-in .4s ease both; }
+.revealKicker { color: #ffe0a1; font-size: 9px; font-weight: 700; letter-spacing: 1.7px; }
+.treasureReveal > p { max-width: 710px; margin: 2px auto; font: italic 500 15px/1.5 "Playfair Display", Georgia, serif; }
+.revealHeart { width: 35px; height: 35px; color: #ff9fc9; filter: drop-shadow(0 0 12px #ff73b8); animation: heart-throb 1.5s ease-in-out infinite; }
+.wishStars { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.wishStars button { position: relative; width: 39px; height: 42px; display: grid; place-items: center; border: 1px solid #ffe39c70; border-radius: 14px; color: #ffe18d; background: #ffc95f17; cursor: pointer; }
+.wishStars button[aria-pressed="true"] { color: #fff3a1; background: #ffcf6d47; box-shadow: 0 0 15px #ffe07988; }
+.wishStars svg { width: 25px; height: 25px; filter: drop-shadow(0 0 5px #ffd66d); }
+.wishStars span { position: absolute; color: #5d3c69; font-size: 9px; font-weight: 700; }
+.starWish { color: #ffe8b7; }
+.pandaMessage { color: #ffe4f2; }
+.invisibleGift { display: flex; align-items: center; gap: 11px; padding: 13px 18px; border: 1px solid #ffe4ae9e; border-radius: 16px; color: #ffebba; background: linear-gradient(130deg, #ec78b166, #a05acb99); box-shadow: 0 5px 17px #180e3270, inset 0 1px #fff8; cursor: pointer; transition: transform .3s; }
+.invisibleGiftOpen { transform: scale(1.06); color: #fff6c7; box-shadow: 0 0 30px #ffdf86a1; }
+.invisibleGift span { font-size: 11px; font-weight: 600; }
+.scrollReveal { position: relative; max-width: 680px; padding: 19px 24px; border: 1px solid #ffe19a; border-radius: 12px; color: #6c425e; background: linear-gradient(135deg, #fff0c9, #fbe4c5 47%, #fff3d9); box-shadow: inset 0 0 0 5px #bf834d32, 0 10px 27px #130c304f; transform: scaleY(.25); transform-origin: top; }
+.scrollUnrolled { animation: unroll-scroll .65s cubic-bezier(.2,.8,.2,1) forwards; }
+.scrollSeal { position: absolute; top: -15px; right: 16px; width: 34px; height: 34px; display: grid; place-items: center; border: 2px solid #ffe09a; border-radius: 50%; color: #ffe6ab; background: #b84578; }
+.scrollReveal strong { color: #8b456b; font: italic 600 18px "Playfair Display", Georgia, serif; }
+.scrollReveal p { margin: 8px 0; font: 12px/1.55 "Playfair Display", Georgia, serif; }
+.scrollReveal em { color: #ad5281; font: italic 15px "Dancing Script", cursive; }
+.treasureComplete { max-width: 800px; padding: 17px 23px; border: 1px solid #ffdf9d9c; border-radius: 19px; color: #fff3df; background: #f9d8781b; text-align: center; box-shadow: 0 0 24px #ffd8772e; }
+.treasureComplete > svg { color: #ffe3a0; vertical-align: middle; }
+.treasureComplete strong { margin-left: 7px; color: #ffe3a0; font: italic 600 19px "Playfair Display", Georgia, serif; }
+.treasureComplete p { margin: 7px 0; font-size: 11px; line-height: 1.55; }
+.treasureComplete b { color: #ffcbe4; font: italic 16px "Dancing Script", cursive; }
+
+.wishChapter { background: radial-gradient(ellipse at 50% 40%, #624c83ed, #31234fef 76%); }
+.lanternScene { position: relative; width: min(850px, 100%); min-height: 330px; display: grid; grid-template-columns: minmax(140px, .7fr) minmax(0, 1.3fr); align-items: center; gap: 28px; padding: 25px; border: 1px solid #ffe1f053; border-radius: 26px; background: radial-gradient(ellipse at 22% 50%, #ffca7928, transparent 38%), #1f204344; }
+.moonGlow { position: absolute; top: 16px; left: 20px; color: #fff0bd; filter: drop-shadow(0 0 19px #ffe4a1); }
+.fireflies { position: absolute; top: 12%; right: 6%; color: #ffe6a1; font-size: 22px; letter-spacing: 4px; text-shadow: 0 0 13px #fff2b4; animation: firefly-drift 5s ease-in-out infinite alternate; }
+.lantern { position: relative; width: 145px; height: 208px; display: flex; flex-direction: column; align-items: center; justify-content: center; justify-self: center; border: 4px solid #e7b75e; border-radius: 47% 47% 38% 38%; color: #ffeeb6; background: linear-gradient(90deg, #f5b76145, #ffe8a92b, #c8844b45); box-shadow: 0 0 0 5px #ffcd7523, 0 0 33px #ffc65b72, inset 0 0 23px #ffdd8270; animation: lantern-sway 3.5s ease-in-out infinite; transition: transform 1.5s, opacity 1.5s; }
+.lantern::before, .lantern::after { position: absolute; right: -8px; left: -8px; height: 13px; border: 3px solid #efc76f; border-radius: 9px; background: #8d59745c; content: ""; }
+.lantern::before { top: 25px; }.lantern::after { bottom: 22px; }
+.lantern > i { position: absolute; top: -21px; width: 4px; height: 24px; background: #f0cb78; }
+.lantern > span { color: #fff7cd; font-size: 25px; text-shadow: 0 0 10px #fff5b6; }
+.lanternWish { position: relative; z-index: 2; width: 84%; max-height: 96px; overflow: auto; color: #fff5cf; font: italic 11px/1.4 "Playfair Display", Georgia, serif; text-align: center; text-shadow: 0 0 8px #ffe8a3; }
+.lantern > b { position: absolute; inset: 15%; border-radius: 50%; background: #fff0a3; opacity: .16; filter: blur(22px); }
+.lanternReleased .lantern { transform: translateY(-135px) scale(.75); opacity: .45; }
+.wishForm { width: 100%; display: flex; flex-direction: column; gap: 9px; }
+.wishForm label { color: #ffe8bf; font: italic 500 15px "Playfair Display", Georgia, serif; }
+.wishForm textarea { width: 100%; min-height: 93px; resize: vertical; padding: 13px 15px; border: 1px solid #ffe1f286; border-radius: 15px; color: #fff4fb; background: #1d183e9c; box-shadow: inset 0 2px 9px #100b274a; font: 12px/1.55 "Poppins", sans-serif; }
+.wishForm textarea::placeholder { color: #e6cadf; }
+.wishForm textarea:focus-visible { outline: 2px solid #ffda91; outline-offset: 2px; }
+.wishFormBottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.wishFormBottom small { color: #e7d6e7; font-size: 9px; }
+.formError { margin: 0; color: #ffc5d8; font-size: 10px; }
+.savedWish { position: relative; z-index: 2; color: #fff2da; text-align: center; }
+.savedWish p { font: italic 16px "Playfair Display", Georgia, serif; }.savedWish blockquote { margin: 8px auto 12px; padding: 10px 14px; border-left: 2px solid #ffdf9a; color: #ffe7bd; background: #fff3; font: italic 13px/1.5 "Playfair Display", Georgia, serif; }
+.textButton { border: 0; color: #ffe4a8; background: transparent; cursor: pointer; font: 600 11px "Poppins", sans-serif; text-decoration: underline; text-underline-offset: 3px; }
+
+.awardChapter { background: radial-gradient(ellipse at 50% 42%, #65477aed, #38214ff2 75%); }
+.certificate { position: relative; width: min(800px, 100%); padding: clamp(22px, 4vw, 42px); border: 5px double #d6a750; outline: 1px solid #fff0c45c; outline-offset: -12px; border-radius: 10px; color: #65455e; background: linear-gradient(135deg, #fff3d8, #ffe4ef 55%, #efe2ff); box-shadow: 0 17px 45px #170e2c70, inset 0 0 35px #e5b1d74d; text-align: center; }
+.certificateCrown { display: block; color: #c3933d; font: 46px/1 Georgia, serif; text-shadow: 0 2px #fff0b5; }
+.certificateFlourish { margin: 5px 0; color: #c15d99; font-size: 18px; letter-spacing: 5px; }
+.certificate small { color: #845277; font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+.certificate p { max-width: 620px; margin: 10px auto; font: 13px/1.55 "Playfair Display", Georgia, serif; }
+.certificate h3 { margin: 5px 0; color: #bf4e88; font: 700 clamp(32px, 5vw, 54px) "Dancing Script", cursive; text-shadow: 0 1px #fff; }
+.certificate strong { color: #8754a0; font: 700 clamp(12px, 2vw, 16px) "Playfair Display", Georgia, serif; letter-spacing: 1.3px; }
+.certificate em { display: block; color: #87446d; font: italic 13px "Playfair Display", Georgia, serif; }
+
+.portalChapter { background: radial-gradient(ellipse at 50% 44%, #5b3e81ed, #251d4cf2 78%); }
+.portal { display: flex; flex-direction: column; align-items: center; gap: 26px; }
+.portalRing { position: relative; width: clamp(190px, 28vw, 300px); aspect-ratio: 1; display: grid; place-items: center; border: 12px solid #f0c36f; border-radius: 50%; background: conic-gradient(from 20deg, #e977c3, #ffe1a0, #ae85ee, #ff90c4, #e977c3); box-shadow: 0 0 0 6px #ef8fd340, 0 0 30px #e98bd8ad, inset 0 0 20px #fff4; transition: transform 1.2s, box-shadow 1.2s; }
+.portalRing::before, .portalRing::after { position: absolute; inset: -20px; border: 2px solid #ffdb9aab; border-radius: 50%; content: ""; box-shadow: 0 0 12px #ffce77; }
+.portalRing::after { inset: -31px; border-color: #f8a9e177; border-style: dashed; animation: portal-ring-turn 25s linear infinite; }
+.portalWorld { width: 84%; height: 84%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; border: 3px solid #fff0d28a; border-radius: 50%; color: #ffe9b0; background: radial-gradient(circle at 48% 37%, #ea8ac9, #8145a1 59%, #342662); box-shadow: inset 0 0 38px #ffdaff78; transition: background 1s; }
+.portalWorld > span, .portalWorld > b { color: #ffe8a4; font-size: 24px; text-shadow: 0 0 12px #fff3a0; }
+.portalWorld > svg { width: 41px; height: 41px; color: #ffb2dc; filter: drop-shadow(0 0 12px #ffb6e4); }
+.portalOpened .portalRing { transform: scale(1.12); box-shadow: 0 0 0 9px #ef8fd360, 0 0 65px #ffc3f5e0, inset 0 0 30px #fff; }
+.portalOpened .portalWorld { background: radial-gradient(circle at 48% 37%, #ffd88e, #ee75b4 48%, #8353c7); }
+.portalMessage { max-width: 600px; text-align: center; animation: reveal-in .6s ease both; }
+.portalMessage strong { color: #ffe6a1; font: 700 27px "Dancing Script", cursive; text-shadow: 0 0 14px #ff9dd4; }
+.portalMessage p { margin: 9px 0; color: #fff3f9; font: 13px/1.55 "Playfair Display", Georgia, serif; }
+.portalMessage b { color: #ffd9a0; font: 700 14px "Playfair Display", Georgia, serif; letter-spacing: 1px; }
+
+.finalCelebration { position: relative; width: min(1020px, calc(100% - 44px)); min-height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 11px; margin: 0 auto 50px; padding: 30px 22px; border: 1px solid #ffe3b678; border-radius: 30px; background: radial-gradient(ellipse at 50% 30%, #bd5b9a88, #39204edf 80%); box-shadow: 0 18px 49px #170c2a6e, inset 0 1px #fff5; text-align: center; }
+.finalRibbon { padding: 6px 15px; border: 1px solid #ffe3bb; border-radius: 18px; color: #703d66; background: linear-gradient(100deg, #fff0ca, #ffd1e7); font-size: 9px; font-weight: 700; letter-spacing: 1.4px; }
+.finalCelebration h2 { margin: 3px 0; color: #fff1dc; font: italic 600 clamp(28px, 4vw, 43px) "Dancing Script", cursive; text-shadow: 0 0 15px #ff91c8; }
+.finalCelebration p { margin: 0; color: #ffebf5; font: italic 14px "Playfair Display", Georgia, serif; }
+.finalActions { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 7px; }
+.finalCelebration > small { color: #eacfe3; font-size: 9px; }
+.footer { display: flex; justify-content: center; align-items: center; gap: 6px; padding: 0 16px 30px; color: #ffe1ef; font: italic 14px "Dancing Script", cursive; text-shadow: 0 2px 8px #211039; }
+.footer svg { color: #ff96c7; }
+
+:global(.story-page).finaleStoryPage { height: 100svh; min-height: 100svh; overflow-x: hidden; overflow-y: auto; overscroll-behavior-y: contain; -webkit-overflow-scrolling: touch; touch-action: pan-y; background: #1c1744; }
+.finaleStoryPage :global(.story-canvas), .finaleStoryPage :global(.story-vignette) { position: fixed; height: 100svh; }
+.finaleStoryPage :global(.story-progress), .finaleStoryPage :global(.story-sound) { position: fixed; }
+.finaleStoryPage :global(.story-vignette) { background: linear-gradient(180deg, #1c133833, #20143e1c 45%, #1f153f6b); }
+
+@keyframes star-twinkle { from { opacity: .2; transform: scale(.8); } to { opacity: .9; transform: scale(1.2); } }
+@keyframes treasure-arrive { from { opacity: 0; translate: 0 13px; scale: .92; } to { opacity: 1; translate: 0 0; scale: 1; } }
+@keyframes lock-glow { to { transform: scale(1.12); filter: brightness(1.25); } }
+@keyframes heart-throb { 50% { transform: scale(1.13); } }
+@keyframes reveal-in { from { opacity: 0; translate: 0 9px; } to { opacity: 1; translate: 0 0; } }
+@keyframes unroll-scroll { to { transform: scaleY(1); } }
+@keyframes lantern-sway { 0%, 100% { translate: 0 0; rotate: -2deg; } 50% { translate: 0 -7px; rotate: 2deg; } }
+@keyframes firefly-drift { to { transform: translate(-12px, 9px); opacity: .55; } }
+@keyframes portal-ring-turn { to { transform: rotate(360deg); } }
+
+@media (max-width: 700px) {
+  .hero { min-height: 100svh; padding: max(82px, calc(env(safe-area-inset-top) + 68px)) 16px 65px; }
+  .heroCrown { font-size: 31px; }.eyebrow { font-size: 8px; letter-spacing: 1.6px; }
+  .hero h1 { margin: 5px 0 9px; font-size: clamp(43px, 12vw, 62px); }
+  .heroPromise { max-width: 440px; font-size: clamp(15px, 4.3vw, 19px); }
+  .heroMessage { max-width: 420px; font-size: 11px; }
+  .beginLink { min-height: 43px; margin-top: 14px; font-size: 10px; }
+  .chapterNav { justify-content: flex-start; width: calc(100% - 20px); max-width: none; gap: 3px; margin-top: -25px; padding: 5px; }
+  .chapterNav a { gap: 5px; padding: 8px 9px; font-size: 9px; }
+  .chapterNav a > span { font-size: 8px; }
+  .chapters { gap: 20px; padding: 0 10px 28px; }
+  .chapter { width: 100%; min-height: 0; gap: 19px; padding: 27px 17px; border-radius: 24px; scroll-margin-top: 70px; }
+  .chapter::before { inset: 6px; border-radius: 18px; }
+  .chapterHeading > span { font-size: 8px; letter-spacing: 1.5px; }
+  .chapterHeading h2 { font-size: clamp(25px, 7vw, 34px); }
+  .chapterHeading p { max-width: 390px; font-size: 10px; }
+  .primaryButton, .secondaryButton { min-height: 45px; padding: 0 16px; font-size: 10px; }
+  .skyMap { min-height: 145px; aspect-ratio: 1.7 / 1; border-radius: 17px; }
+  .constellationName { font-size: 73px; }
+  .constellationResult p { font-size: 10px; }
+  .treasureLayout { grid-template-columns: 1fr; gap: 12px; }
+  .chestScene { min-height: 267px; }
+  .chestLid { top: 34px; width: min(260px, 91%); height: 78px; }
+  .chestBody { width: min(252px, 87%); height: 125px; }
+  .chestOpen .chestLid { transform: translateY(-71px) rotateX(48deg); }
+  .chestScene > p { font-size: 12px; }
+  .treasureShelf { gap: 7px; }
+  .treasureButton { min-height: 86px; padding: 8px 5px; border-radius: 13px; }
+  .treasureButton b { font-size: 9px; }
+  .treasureButton small { font-size: 7px; }
+  .treasureReveal { min-height: 102px; padding: 13px; }
+  .treasureReveal > p { font-size: 12px; }
+  .wishStars { gap: 5px; }
+  .wishStars button { width: 34px; height: 37px; }
+  .treasureComplete { padding: 13px; }
+  .treasureComplete strong { font-size: 16px; }
+  .treasureComplete p { font-size: 10px; }
+  .lanternScene { min-height: 0; grid-template-columns: 1fr; gap: 16px; padding: 22px 16px; }
+  .moonGlow { top: 11px; left: 12px; }.moonGlow svg { width: 25px; }
+  .fireflies { top: 10px; right: 4px; font-size: 15px; letter-spacing: 1px; }
+  .lantern { width: 106px; height: 153px; }
+  .lanternWish { max-height: 65px; font-size: 9px; }
+  .lanternReleased .lantern { transform: translateY(-55px) scale(.7); }
+  .wishForm label { font-size: 12px; }
+  .wishForm textarea { min-height: 78px; font-size: 11px; }
+  .wishFormBottom { align-items: flex-end; }
+  .wishFormBottom .primaryButton { max-width: 76%; white-space: normal; }
+  .certificate { padding: 20px 14px; border-width: 4px; }
+  .certificateCrown { font-size: 35px; }.certificate small { font-size: 8px; letter-spacing: 1px; }
+  .certificate p { font-size: 10px; }.certificate em { font-size: 10px; }
+  .portalRing { width: 176px; }
+  .portalMessage { max-width: 420px; }.portalMessage strong { font-size: 22px; }.portalMessage p { font-size: 11px; }.portalMessage b { font-size: 11px; }
+  .finalCelebration { width: calc(100% - 20px); min-height: 235px; margin-bottom: 25px; padding: 24px 13px; }
+  .finalCelebration p { font-size: 12px; }.finalActions { flex-direction: column; width: 100%; align-items: center; }.finalActions button { width: min(290px, 90%); }
+}
+
+@media (max-width: 360px) {
+  .hero { padding-right: 12px; padding-left: 12px; }
+  .hero h1 { font-size: 42px; }
+  .chapterNav a { padding: 8px 7px; }
+  .chapterNav a > svg { width: 13px; }
+  .chapters { padding-right: 7px; padding-left: 7px; }
+  .chapter { padding-right: 12px; padding-left: 12px; }
+  .treasureButton { min-height: 80px; }
+  .treasureButton b { font-size: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience *, .experience *::before, .experience *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+.experience[data-reduced-motion="true"] *, .experience[data-reduced-motion="true"] *::before, .experience[data-reduced-motion="true"] *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
